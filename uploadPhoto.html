@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload P hoto</title>
+    <style>
+        input[type=submit]{
+            width: 80%;
+            padding: 15px 20px;
+            margin: 30px 0;
+            display: inline-block;
+            border: none;
+            border-radius: 100px;
+            box-sizing: border-box;
+            background: linear-gradient(120deg,#4dd0e1, #80deea,#b2ebf2,#e0f7fa);
+        }
+        h2{
+            text-align: center;
+            font-size: 50px; 
+            color: #9575cd;
+        }
+        p{
+            text-align: center;
+            font-size: 40px; 
+        }
+        div{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 400px;
+            border-radius: 10px;
+
+        }
+        body{
+            background: linear-gradient(120deg, #BA55D3, #3dccdf);
+            height: 100vh;
+        }
+        
+    </style>
+</head>
+<body style="
+background: linear-gradient(120deg,#4db6ac, #80cbc4, #b2dfdb, #e0f2f1);
+height: 100vh;
+">
+<div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-5"> <br> <br>
+        <div style="text-align: center;">
+
+    <h2>Upload Photo</h2>
+    <form action="process_upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo"> <br><br>
+    <input style="background-color: aqua; border-radius: 100px;" type="submit" value="Upload Photo">
+    
+    </form>
+
+
+
+</body>
+</html>
